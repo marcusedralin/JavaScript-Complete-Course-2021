@@ -36,3 +36,33 @@ let job1 = 'rec aide';
 let job2 = 'developer';
 
 console.log(myCurrentJob);
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+// a boolean value with a type of true
+
+console.log(typeof true); // boolean
+console.log(typeof javascriptIsFun); // boolean
+console.log(typeof 'Marcus'); // string
+console.log(typeof 30); // number
+// typeof shows the type of whatever you are calling
+
+javascriptIsFun = 'YUP it is!';
+console.log(javascriptIsFun);
+console.log(typeof javascriptIsFun);
+// the value changed but the previous value/typeof still returns as true/boolean;
+
+let year;
+console.log(year);
+console.log(typeof year);
+// returns undefined
+
+year = 1991;
+console.log(typeof year);
+// number
+
+console.log(typeof null);
+// typeof is object
+// error. null is not an object.
+
+
