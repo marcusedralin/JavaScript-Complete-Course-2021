@@ -94,37 +94,80 @@
 // Operators //
 
 // Math operators
-const now = 2021;
-const ageMarcus = now - 1990;
-const ageSee = now - 1994;
-console.log(ageMarcus, ageSee);
+// const now = 2021;
+// const ageMarcus = now - 1990;
+// const ageSee = now - 1994;
+// console.log(ageMarcus, ageSee);
 
-console.log(ageMarcus * 2, ageMarcus / 10, 2 ** 3);
-// 2 ** 3 means two to the power of three 3 = 2 * 2 * 2
+// console.log(ageMarcus * 2, ageMarcus / 10, 2 ** 3);
+// // 2 ** 3 means two to the power of three 3 = 2 * 2 * 2
+
+// const firstName = 'Marcus';
+// const lastName = 'Edralin';
+// console.log(firstName + ' ' + lastName);
+// // concatenation
+
+// // Assignment Operators
+// let x = 23 + 3; // 26
+// x += 12; // x = x + 12 = 38
+// x *= 2; // x = x * 2 = 76
+// x++; // x = x + 1 = 77
+// x--; // x = x - 1 = 76
+// console.log(x);
+
+// // Comparison Operators
+// console.log(ageMarcus > ageSee); // true < > <= >=
+// console.log(ageSee >= 18); // true 
+
+// const isFullAge = ageSee >= 18;
+
+// console.log(now - 1990 > now - 1994);
+// // JS doesn't work left to right
+// // handles the math operations then the comparison operation
+
+// Operator Precedance //
+
+// const now = 2021;
+// const ageMarcus = now - 1990;
+// const ageSee = now - 1994;
+
+// console.log(now - 1990 > now - 1994);
+
+// let x, y;
+// x = y = 10 - 5 - 1;
+// console.log(x,y);
+// // assignment operators happen right to left
+// // 10 - 5 = 5 - 1 = 4 = y = x //
+// // x and y = 4
+
+// const averageAge = (ageMarcus + ageSee) / 2;
+// console.log(ageMarcus, ageSee, averageAge);
+// // PEMDAS applies here
+
+// Strings and Template Literals //
 
 const firstName = 'Marcus';
-const lastName = 'Edralin';
-console.log(firstName + ' ' + lastName);
-// concatenation
+const job = 'frontend web developer';
+const birthYear = 1990;
+const year = 2021;
 
-// Assignment Operators
-let x = 23 + 3; // 26
-x += 12; // x = x + 12 = 38
-x *= 2; // x = x * 2 = 76
-x++; // x = x + 1 = 77
-x--; // x = x - 1 = 76
-console.log(x);
+const intro = () => {
+    console.log(`I am ${firstName}, a ${year - birthYear} year old ${job}.`);
+};
 
-// Comparison Operators
-console.log(ageMarcus > ageSee); // true < > <= >=
-console.log(ageSee >= 18); // true 
+intro();
 
-const isFullAge = ageSee >= 18;
+console.log(`You can use backticks for all strings too!`);
 
-console.log(now - 1990 > now - 1994);
-// JS doesn't work left to right
-// handles the math operations then the comparison operation
+console.log('String with\n\
+multiple \n\
+lines');
 
+console.log(`String
+with
+multi-lines
+using
+backticks`);
 
 
 
