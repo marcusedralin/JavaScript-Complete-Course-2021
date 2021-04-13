@@ -65,6 +65,32 @@
 // // typeof is object
 // // error. null is not an object.
 
+let age = 30;
+age = 31;
+// with let you can reassign/mutate a value to the variable
+
+const birthYear = 1990;
+// birthYear = 1990; 
+// error/immutable 
+// const dog;
+// error missing initalizer
+
+// Always use const by default to help from causing bugs do unwanted mutation unless you know you variable is supposed to change.
+// var shouldn't be used
+
+var job = 'programmer';
+job = 'teacher';
+
+lastName = 'Edralin';
+console.log(lastName);
+// this works but JS creates a property on the global object by not declaring the variable
+
+
+
+
+
+
+
 
 
 
