@@ -171,29 +171,82 @@
 
 // If Else Statements
 
-const age = 14;
+// const age = 14;
 
-if(age >= 18) {
-    console.log(`${age} years old, is old enough to drive 🚗`);
-} else {
-    const yearsLeft = 18 - age;
-    console.log(`${age} years old is NOT old enough to drive 🤷‍♀️. \n\Wait ${yearsLeft} years to drive.`);
-}
+// if(age >= 18) {
+//     console.log(`${age} years old, is old enough to drive 🚗`);
+// } else {
+//     const yearsLeft = 18 - age;
+//     console.log(`${age} years old is NOT old enough to drive 🤷‍♀️. \n\Wait ${yearsLeft} years to drive.`);
+// }
 // The if condition code block occurs as long as the argument is truthy
 // The else condition code block occurs as long as the agrument is falsy
 // This gives you a controlled structure that will execute code based on conditions
 
-const birthYear = 1990;
+// const birthYear = 1990;
 
-let century;
+// let century;
 
-if(birthYear <= 2000) {
-    century = 20;
-} else {
-    century = 21;
-}
+// if(birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
 
-console.log(century);
+// console.log(century);
+
+// Type Conversion //
+
+const inputYear = '1990';
+console.log(Number(inputYear));
+// The Number() function converts a string to a number. 
+// This doesn't mutate the original variable
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+// NaN-Not a number
+console.log(typeof NaN);
+// The typeof function shows you what type of value something is
+// NaN means an invalid number
+
+console.log(String(30), 30);
+// The String() function converts a value to a string.
+
+//JS can only convert to 3 types, a number, a string or a boolean.
+
+// Type Coercion //
+
+// This occurs whenever an operator is dealing two values that have different types
+// JS behind the scenes will convert one value to match the other so the operation can be executed.
+
+console.log('I am ' + 30 + ' years old');
+console.log('I am ' + '30' + ' years old');
+console.log('I am ' + String(30) + ' years old');
+
+// The plus (+) operator knows to convert the number to a string. This is built in coercion done by JavaScript. The results are the same.
+// The same occurs in string template literals.
+
+console.log('34' - '23' - 10);
+
+// JS converted the strings to numbers via the (-) operator.
+
+console.log('34' + '23' + 10);
+
+// JS did the opposite and converted everthing to stings and concatenated them.
+
+console.log('23' * '2');
+console.log('23' / '2');
+console.log('23' > '18');
+
+// JS converts all of these strings to numbers using (*, /, >);
+// The only way this doesn't occur is when using the (+) operator.
+
+let n = '1' + 1;
+// 11
+n = n - 1;
+// 11 - 1
+console.log(n);
+// 10
 
 
 
