@@ -283,34 +283,73 @@
 
 // Equality Operators == VS === //
 
-const age = '18';
-// = is the assignment operator, === is a strict comparison operator
-if (age === 18) console.log('You are an adult :D (strict)');
-// This returns a true or false value only if both sides are exactly the same.
-if (age == 18) console.log('You are an adult :D(loose)');
-// This does type coercion to the values even though '18' is a string it is still equal to 18 the number.
+// const age = '18';
+// // = is the assignment operator, === is a strict comparison operator
+// if (age === 18) console.log('You are an adult :D (strict)');
+// // This returns a true or false value only if both sides are exactly the same.
+// if (age == 18) console.log('You are an adult :D(loose)');
+// // This does type coercion to the values even though '18' is a string it is still equal to 18 the number.
 
-//When comparing values use === rather than == 
+// //When comparing values use === rather than == 
 
-const favNum = Number(prompt('What is your favorite number?'));
-// prompt returns a string so we use Number() to convert it to a number
-console.log(favNum); // whatever the user inputs
-console.log(typeof favNum); //string
+// const favNum = Number(prompt('What is your favorite number?'));
+// // prompt returns a string so we use Number() to convert it to a number
+// console.log(favNum); // whatever the user inputs
+// console.log(typeof favNum); //string
 
-if (favNum === 36) {
-    console.log("Hey! Thats my favorite number too!");
-} else if (favNum === 7) {
-    console.log("Whoa! Thats my fiance's favorite number!")
-} else if (favNum === 5) {
-    console.log("Thats how old my dogs are!")
-} else {
-    console.log("Not OUR favorite numbers...")
-}
-// This converts the string value entered in the prompt function by the user to a number and then compares favNum to the number 36.
+// if (favNum === 36) {
+//     console.log("Hey! Thats my favorite number too!");
+// } else if (favNum === 7) {
+//     console.log("Whoa! Thats my fiance's favorite number!")
+// } else if (favNum === 5) {
+//     console.log("Thats how old my dogs are!")
+// } else {
+//     console.log("Not OUR favorite numbers...")
+// }
+// // This converts the string value entered in the prompt function by the user to a number and then compares favNum to the number 36.
 
-if (favNum !== 36) console.log('Why not 36?');
+// if (favNum !== 36) console.log('Why not 36?');
 
 // This is the not equals strict operator 
+
+// Boolean Logic: the && (and) || (or) operators //
+
+// The && operator returns truthy if both conditions are met
+// The || operator returns truthy if one of the conditions are met
+// The ! operator returns truthy if the condition is not met
+
+const hasDriversLicense = true; //A
+
+const hasGoodVision = false; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+// Notice how the console returns false because both values aren't truthy
+console.log(hasDriversLicense || hasGoodVision);
+// Now it returns true because one of the vars are truthy
+console.log(!hasDriversLicense);
+// This returns false because it is the opposite of the true value
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('See is able to drive!');
+// } else {
+//     console.log('Someone else should drive.');
+// }
+
+// The && causes the else block to execute because both aren't true.
+
+const isTired = false; // C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+// So long as one operand is true the || operator returns true
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('See is able to drive!');
+} else {
+    console.log('Someone else should drive.');
+}
+// Else block occurs because hasGoodVision is false while the other variables are truthy.
+
 
 
 
