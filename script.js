@@ -253,33 +253,65 @@
 // 5 falsy values: 0, '', undefined, null, NaN
 // These are falsy values when converted to a boolean
 
-console.log(Boolean(0)); // F
-console.log(Boolean(undefined)); // F
-console.log(Boolean('Marcus')); // T
-console.log(Boolean({})); // T
-console.log(Boolean('')); // F
+// console.log(Boolean(0)); // F
+// console.log(Boolean(undefined)); // F
+// console.log(Boolean('Marcus')); // T
+// console.log(Boolean({})); // T
+// console.log(Boolean('')); // F
 
-// We are asking if these values ran in the function Boolean() are truthy.
-// Basically asking if they are present
+// // We are asking if these values ran in the function Boolean() are truthy.
+// // Basically asking if they are present
 
-const money = 0;
-if (money) {
-    console.log("Don't spend it all!")
-} else {
-    console.log("You should get a job!")
-}
+// const money = 0;
+// if (money) {
+//     console.log("Don't spend it all!")
+// } else {
+//     console.log("You should get a job!")
+// }
 
-// We are asking if the variable money is truthy then don't spend otherwise get a job if you have a falsy value for money.
-// In turn the else block exectures because it is falsy (0).
+// // We are asking if the variable money is truthy then don't spend otherwise get a job if you have a falsy value for money.
+// // In turn the else block exectures because it is falsy (0).
 
-let height = 0;
-if (height) {
-    console.log('Woot! Height is DEFINED.')
-} else {
-    console.log('Uh Oh! Height is UNDEFINED.')
-}
+// let height = 0;
+// if (height) {
+//     console.log('Woot! Height is DEFINED.')
+// } else {
+//     console.log('Uh Oh! Height is UNDEFINED.')
+// }
 
 // The variable height has no value so it is undefined. In turn the ELSE block executes as height is not a truthy value.
+
+// Equality Operators == VS === //
+
+const age = '18';
+// = is the assignment operator, === is a strict comparison operator
+if (age === 18) console.log('You are an adult :D (strict)');
+// This returns a true or false value only if both sides are exactly the same.
+if (age == 18) console.log('You are an adult :D(loose)');
+// This does type coercion to the values even though '18' is a string it is still equal to 18 the number.
+
+//When comparing values use === rather than == 
+
+const favNum = Number(prompt('What is your favorite number?'));
+// prompt returns a string so we use Number() to convert it to a number
+console.log(favNum); // whatever the user inputs
+console.log(typeof favNum); //string
+
+if (favNum === 36) {
+    console.log("Hey! Thats my favorite number too!");
+} else if (favNum === 7) {
+    console.log("Whoa! Thats my fiance's favorite number!")
+} else if (favNum === 5) {
+    console.log("Thats how old my dogs are!")
+} else {
+    console.log("Not OUR favorite numbers...")
+}
+// This converts the string value entered in the prompt function by the user to a number and then compares favNum to the number 36.
+
+if (favNum !== 36) console.log('Why not 36?');
+
+// This is the not equals strict operator 
+
 
 
 
