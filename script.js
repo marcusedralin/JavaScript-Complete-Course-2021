@@ -197,19 +197,19 @@
 
 // Type Conversion //
 
-const inputYear = '1990';
-console.log(Number(inputYear));
+// const inputYear = '1990';
+// console.log(Number(inputYear));
 // The Number() function converts a string to a number. 
 // This doesn't mutate the original variable
-console.log(Number(inputYear) + 18);
+// console.log(Number(inputYear) + 18);
 
-console.log(Number('Jonas'));
+// console.log(Number('Jonas'));
 // NaN-Not a number
-console.log(typeof NaN);
+// console.log(typeof NaN);
 // The typeof function shows you what type of value something is
 // NaN means an invalid number
 
-console.log(String(30), 30);
+// console.log(String(30), 30);
 // The String() function converts a value to a string.
 
 //JS can only convert to 3 types, a number, a string or a boolean.
@@ -219,34 +219,69 @@ console.log(String(30), 30);
 // This occurs whenever an operator is dealing two values that have different types
 // JS behind the scenes will convert one value to match the other so the operation can be executed.
 
-console.log('I am ' + 30 + ' years old');
-console.log('I am ' + '30' + ' years old');
-console.log('I am ' + String(30) + ' years old');
+// console.log('I am ' + 30 + ' years old');
+// console.log('I am ' + '30' + ' years old');
+// console.log('I am ' + String(30) + ' years old');
 
 // The plus (+) operator knows to convert the number to a string. This is built in coercion done by JavaScript. The results are the same.
 // The same occurs in string template literals.
 
-console.log('34' - '23' - 10);
+// console.log('34' - '23' - 10);
 
 // JS converted the strings to numbers via the (-) operator.
 
-console.log('34' + '23' + 10);
+// console.log('34' + '23' + 10);
 
 // JS did the opposite and converted everthing to stings and concatenated them.
 
-console.log('23' * '2');
-console.log('23' / '2');
-console.log('23' > '18');
+// console.log('23' * '2');
+// console.log('23' / '2');
+// console.log('23' > '18');
 
 // JS converts all of these strings to numbers using (*, /, >);
 // The only way this doesn't occur is when using the (+) operator.
 
-let n = '1' + 1;
-// 11
-n = n - 1;
-// 11 - 1
-console.log(n);
+// let n = '1' + 1;
+// // 11
+// n = n - 1;
+// // 11 - 1
+// console.log(n);
 // 10
+
+// Truthy and Falsy Values //
+
+// 5 falsy values: 0, '', undefined, null, NaN
+// These are falsy values when converted to a boolean
+
+console.log(Boolean(0)); // F
+console.log(Boolean(undefined)); // F
+console.log(Boolean('Marcus')); // T
+console.log(Boolean({})); // T
+console.log(Boolean('')); // F
+
+// We are asking if these values ran in the function Boolean() are truthy.
+// Basically asking if they are present
+
+const money = 0;
+if (money) {
+    console.log("Don't spend it all!")
+} else {
+    console.log("You should get a job!")
+}
+
+// We are asking if the variable money is truthy then don't spend otherwise get a job if you have a falsy value for money.
+// In turn the else block exectures because it is falsy (0).
+
+let height = 0;
+if (height) {
+    console.log('Woot! Height is DEFINED.')
+} else {
+    console.log('Uh Oh! Height is UNDEFINED.')
+}
+
+// The variable height has no value so it is undefined. In turn the ELSE block executes as height is not a truthy value.
+
+
 
 
 
