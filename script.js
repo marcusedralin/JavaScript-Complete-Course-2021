@@ -352,35 +352,53 @@
 
 // Switch Statements // 
 
-const day = 'Monday';
+// const day = 'Monday';
 
-switch (day) {
-    case 'Monday':
-        console.log('Wake up at 7am');
-        console.log('Make coffee');
-        console.log('Code all day')
-        break;
-    case 'Tuesday':
-        console.log('Play Genshin Impact');
-        break;
-    case 'Wednesday':
-    case 'Thursday':
-        console.log('Spend time with wife.');
-        break;
-    case 'Friday':
-        console.log('Apply for dev jobs');
-        break;
-    case 'Saturday':
-    case 'Sunday':
-        console.log('File for UI');
-        break;
-    default:
-        console.log('Not a valid day.');
-}
+// switch (day) {
+//     case 'Monday':
+//         console.log('Wake up at 7am');
+//         console.log('Make coffee');
+//         console.log('Code all day')
+//         break;
+//     case 'Tuesday':
+//         console.log('Play Genshin Impact');
+//         break;
+//     case 'Wednesday':
+//     case 'Thursday':
+//         console.log('Spend time with wife.');
+//         break;
+//     case 'Friday':
+//         console.log('Apply for dev jobs');
+//         break;
+//     case 'Saturday':
+//     case 'Sunday':
+//         console.log('File for UI');
+//         break;
+//     default:
+//         console.log('Not a valid day.');
+// }
 // this is like writing if day === 'value' then run this code block {case}
 // the break; stops the code from executing the next case until it finds a break;
 // the default is like the else block that if nothing passes each case then default code block will run.
 // switch statements are for STRICT equality
+
+// Statements and Expressions //
+
+3 + 4
+1292
+true && false && !false
+// these are expressions that return a value
+
+if (23 > 10) {
+    const str = '23 is bigger'; // an expression in a statement
+}
+// this is a statement that doesn't produce a value
+
+// in a string template literal you can only use expressions not statements
+const me = 'Marcus'
+console.log(`My name is ${me}, I'm ${2032 - 1393} years old.`)
+
+// you couldn't put an if statement in there
 
 
 
