@@ -38,4 +38,22 @@
 // console.log(typeof isIsland); //boolean
 // console.log(typeof language); //undefined
 
+const weekday = 'Wednesday';
+
+if (weekday === 'Monday') {
+    console.log('do monday stuff');
+} else if (weekday === 'Tuesday') {
+    console.log('do tuesday stuff');
+} else if (weekday === 'Wednesday' || 'Thursday') {
+    console.log('do wednesday or thursday stuff');
+} else if (weekday === 'Friday') {
+    console.log('do friday stuff');
+} else if (weekday === 'Saturday' || 'Sunday') {
+    console.log('Enjoy the weekend');
+} else {
+    console.log('Not a valid day...');
+}
+
+// The same as the switch statement but with if else statements and or comparisons
+
 

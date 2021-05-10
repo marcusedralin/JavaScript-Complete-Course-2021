@@ -318,18 +318,18 @@
 // The || operator returns truthy if one of the conditions are met
 // The ! operator returns truthy if the condition is not met
 
-const hasDriversLicense = true; //A
+// const hasDriversLicense = true; //A
 
-const hasGoodVision = false; // B
+// const hasGoodVision = false; // B
 
-console.log(hasDriversLicense && hasGoodVision);
-// Notice how the console returns false because both values aren't truthy
-console.log(hasDriversLicense || hasGoodVision);
-// Now it returns true because one of the vars are truthy
-console.log(!hasDriversLicense);
-// This returns false because it is the opposite of the true value
+// console.log(hasDriversLicense && hasGoodVision);
+// // Notice how the console returns false because both values aren't truthy
+// console.log(hasDriversLicense || hasGoodVision);
+// // Now it returns true because one of the vars are truthy
+// console.log(!hasDriversLicense);
+// // This returns false because it is the opposite of the true value
 
-const shouldDrive = hasDriversLicense && hasGoodVision;
+// const shouldDrive = hasDriversLicense && hasGoodVision;
 
 // if (shouldDrive) {
 //     console.log('See is able to drive!');
@@ -339,19 +339,48 @@ const shouldDrive = hasDriversLicense && hasGoodVision;
 
 // The && causes the else block to execute because both aren't true.
 
-const isTired = false; // C
-console.log(hasDriversLicense || hasGoodVision || isTired);
-// So long as one operand is true the || operator returns true
+// const isTired = false; // C
+// console.log(hasDriversLicense || hasGoodVision || isTired);
+// // So long as one operand is true the || operator returns true
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log('See is able to drive!');
-} else {
-    console.log('Someone else should drive.');
-}
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('See is able to drive!');
+// } else {
+//     console.log('Someone else should drive.');
+// }
 // Else block occurs because hasGoodVision is false while the other variables are truthy.
 
+// Switch Statements // 
 
+const day = 'Monday';
 
+switch (day) {
+    case 'Monday':
+        console.log('Wake up at 7am');
+        console.log('Make coffee');
+        console.log('Code all day')
+        break;
+    case 'Tuesday':
+        console.log('Play Genshin Impact');
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log('Spend time with wife.');
+        break;
+    case 'Friday':
+        console.log('Apply for dev jobs');
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log('File for UI');
+        break;
+    default:
+        console.log('Not a valid day.');
+}
+// this is like writing if day === 'value' then run this code block {case}
+// the break; stops the code from executing the next case until it finds a break;
+// the default is like the else block that if nothing passes each case then default code block will run.
+// switch statements are for STRICT equality
 
 
 
