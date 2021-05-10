@@ -146,28 +146,56 @@
 
 // Strings and Template Literals //
 
-const firstName = 'Marcus';
-const job = 'frontend web developer';
+// const firstName = 'Marcus';
+// const job = 'frontend web developer';
+// const birthYear = 1990;
+// const year = 2021;
+
+// const intro = () => {
+//     console.log(`I am ${firstName}, a ${year - birthYear} year old ${job}.`);
+// };
+
+// intro();
+
+// console.log(`You can use backticks for all strings too!`);
+
+// console.log('String with\n\
+// multiple \n\
+// lines');
+
+// console.log(`String
+// with
+// multi-lines
+// using
+// backticks`);
+
+// If Else Statements
+
+const age = 14;
+
+if(age >= 18) {
+    console.log(`${age} years old, is old enough to drive 🚗`);
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`${age} years old is NOT old enough to drive 🤷‍♀️. \n\Wait ${yearsLeft} years to drive.`);
+}
+// The if condition code block occurs as long as the argument is truthy
+// The else condition code block occurs as long as the agrument is falsy
+// This gives you a controlled structure that will execute code based on conditions
+
 const birthYear = 1990;
-const year = 2021;
 
-const intro = () => {
-    console.log(`I am ${firstName}, a ${year - birthYear} year old ${job}.`);
-};
+let century;
 
-intro();
+if(birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
 
-console.log(`You can use backticks for all strings too!`);
+console.log(century);
 
-console.log('String with\n\
-multiple \n\
-lines');
 
-console.log(`String
-with
-multi-lines
-using
-backticks`);
 
 
 
