@@ -384,22 +384,52 @@
 
 // Statements and Expressions //
 
-3 + 4
-1292
-true && false && !false
+// 3 + 4
+// 1292
+// true && false && !false
 // these are expressions that return a value
 
-if (23 > 10) {
-    const str = '23 is bigger'; // an expression in a statement
-}
+// if (23 > 10) {
+//     const str = '23 is bigger'; // an expression in a statement
+// }
 // this is a statement that doesn't produce a value
 
 // in a string template literal you can only use expressions not statements
-const me = 'Marcus'
-console.log(`My name is ${me}, I'm ${2032 - 1393} years old.`)
+// const me = 'Marcus'
+// console.log(`My name is ${me}, I'm ${2032 - 1393} years old.`)
 
 // you couldn't put an if statement in there
 
+// The Conditional (Ternary) Operator //
+
+const age = 30;
+age >= 18 ? console.log('I like to drink beer.') :
+    console.log('I like drink juice.');
+
+// The if is the opening line, asking is age greater than or equal to 18(?) then console.log(...) otherwise(:) console.log(...)
+
+// The conditional operator is an expression
+
+const ageConditional = 19;
+const drink = ageConditional >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+// Without the conditional operator we would need to write an if else statement
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+
+console.log(drink2);
+
+// The same output but ternary operator is a lot easier to read and has less code
+
+console.log(`I like to drink ${ageConditional >= 18 ? 'wine' : 'water'}`);
+
+// You can use conditional operators in string template literals unlike having an if else statement.
 
 
 
